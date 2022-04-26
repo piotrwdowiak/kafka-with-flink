@@ -1,4 +1,4 @@
-package com.piotrwdowiak.kafkawithtestcontainers;
+package com.piotrwdowiak.kafkawithflink;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +11,9 @@ public class ThingsController {
 
     @Autowired
     private KafkaProducer producer;
+
+    @Autowired
+    private KafkaAvroProducer avroProducer;
 
     @Value("${topics.topic-to-flink}")
     private String topic;

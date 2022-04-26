@@ -1,4 +1,4 @@
-package com.piotrwdowiak.kafkawithtestcontainers;
+package com.piotrwdowiak.kafkawithflink;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

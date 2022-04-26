@@ -1,4 +1,4 @@
-package com.piotrwdowiak.kafkawithtestcontainers;
+package com.piotrwdowiak.kafkawithflink;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;

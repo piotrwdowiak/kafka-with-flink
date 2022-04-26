@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96a7c159-10cb-41a3-8376-6b1e93421e03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithflink/KafkaAvroProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/resources/avro/thing.avsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/piotrwdowiak/ThingProcessorJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piotrwdowiak/ThingProcessorJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/piotrwdowiak/ThingProcessorJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/piotrwdowiak/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithtestcontainers/ThingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithtestcontainers/ThingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithtestcontainers/KafkaConsumerFromFlink.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithflink/KafkaConsumerFromFlink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithtestcontainers/KafkaConsumerToFlink.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithflink/KafkaConsumerToFlink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithtestcontainers/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithflink/KafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithtestcontainers/KafkaWithTestcontainersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithflink/KafkaWithTestcontainersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithtestcontainers/ThingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/main/java/com/piotrwdowiak/kafkawithflink/ThingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/test/java/com/piotrwdowiak/kafkawithtestcontainers/KafkaTestContainersLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/test/java/com/piotrwdowiak/kafkawithflink/KafkaTestContainersLiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka-with-flink/src/test/java/com/piotrwdowiak/kafkawithtestcontainers/KafkaWithTestcontainersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka-with-flink/src/test/java/com/piotrwdowiak/kafkawithflink/KafkaWithTestcontainersApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +52,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunManager">
     <configuration name="ThingProcessorJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -81,11 +88,22 @@
       <updated>1650915620302</updated>
       <workItem from="1650915622674" duration="7346000" />
       <workItem from="1650997725432" duration="41000" />
-      <workItem from="1650997992931" duration="474000" />
+      <workItem from="1650997992931" duration="2697000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

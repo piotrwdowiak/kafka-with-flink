@@ -1,4 +1,4 @@
-package com.piotrwdowiak.kafkawithtestcontainers;
+package com.piotrwdowiak.kafkawithflink;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

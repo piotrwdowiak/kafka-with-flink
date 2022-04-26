@@ -23,8 +23,8 @@ public class ThingProcessorJob
 
 		DataStream<String> stream = env.fromSource(kafkaSource, WatermarkStrategy.noWatermarks(), "Kafka Source");
 		stream
-				.map(i -> i.toUpperCase(Locale.ROOT))
-				.sinkTo(kafkaSink);
+			.map(i -> i.toUpperCase(Locale.ROOT))
+			.sinkTo(kafkaSink);
 
 		env.execute();
 	}

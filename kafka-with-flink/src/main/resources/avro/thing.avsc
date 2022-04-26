@@ -1,0 +1,11 @@
+{
+     "type": "record",
+     "namespace": "com.piotrwdowiak.kafkawithflink",
+     "name": "Thing",
+     "version": "1",
+     "fields": [
+       { "name": "name", "type": "string", "doc": "Name of the thing", "avro.java.string": "String" },
+       { "name": "color", "type": "string", "doc": "Color of the thing", "avro.java.string": "String" },
+       { "name": "height", "type": "int", "doc": "Height of the thing" }
+     ]
+}

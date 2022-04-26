@@ -1,4 +1,4 @@
-package com.piotrwdowiak.kafkawithtestcontainers;
+package com.piotrwdowiak.kafkawithflink;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -13,6 +13,7 @@ import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,7 @@ import org.testcontainers.containers.KafkaContainer;
 import org.testcontainers.utility.DockerImageName;
 
 @RunWith(SpringRunner.class)
-@Import(com.piotrwdowiak.kafkawithtestcontainers.KafkaTestContainersLiveTest.KafkaTestContainersConfiguration.class)
+@Import(com.piotrwdowiak.kafkawithflink.KafkaTestContainersLiveTest.KafkaTestContainersConfiguration.class)
 @SpringBootTest(classes = KafkaWithTestcontainersApplication.class)
 @DirtiesContext
 public class KafkaTestContainersLiveTest {
@@ -52,6 +53,7 @@ public class KafkaTestContainersLiveTest {
     private String topic;
 
     @Test
+    @Ignore
     public void givenKafkaDockerContainer_whenSendingtoSimpleProducer_thenMessageReceived()
             throws Exception {
         producer.send(topic, "Sending with own controller");

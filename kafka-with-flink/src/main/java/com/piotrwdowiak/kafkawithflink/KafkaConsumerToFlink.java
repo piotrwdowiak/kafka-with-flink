@@ -1,4 +1,4 @@
-package com.piotrwdowiak.kafkawithtestcontainers;
+package com.piotrwdowiak.kafkawithflink;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
@@ -21,6 +21,12 @@ public class KafkaConsumerToFlink {
         LOGGER.info("received payload='{}'", consumerRecord.toString());
         setPayload(consumerRecord.toString());
         latch.countDown();
+    }
+
+    @KafkaListener(topics = "tavro_topick")
+    public void asdasd(ConsumerRecord<?, ?> consumerRecord) {
+        LOGGER.info("received payload='{}'", consumerRecord.toString());
+
     }
 
     public CountDownLatch getLatch() {
