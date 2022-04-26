@@ -12,8 +12,11 @@ public class ThingsController {
     @Autowired
     private KafkaProducer producer;
 
+    @Value("${topics.topic-to-flink}")
+    private String topic;
+
     @GetMapping(path = "/produce")
     public void produce() {
-        producer.send("things_to_flink", "Sending with own controller");
+        producer.send(topic, "Sending with own controller");
     }
 }

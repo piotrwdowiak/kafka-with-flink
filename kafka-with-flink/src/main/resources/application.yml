@@ -3,5 +3,6 @@ spring:
         consumer:
             auto-offset-reset: earliest
             group-id: piotrtest
-test:
-    topic: embedded-test-topic
+topics:
+    topic-to-flink: things_to_flink
+    topic-from-flink: things_from_flink
