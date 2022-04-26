@@ -43,7 +43,7 @@ public class KafkaTestContainersLiveTest {
             new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:5.4.3"));
 
     @Autowired
-    private KafkaConsumer consumer;
+    private KafkaConsumerToFlink consumer;
 
     @Autowired
     private KafkaProducer producer;

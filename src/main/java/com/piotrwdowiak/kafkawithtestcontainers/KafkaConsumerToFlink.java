@@ -9,14 +9,14 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.CountDownLatch;
 
 @Component
-public class KafkaConsumer {
+public class KafkaConsumerToFlink {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumerToFlink.class);
 
     private CountDownLatch latch = new CountDownLatch(1);
     private String payload = null;
 
-    @KafkaListener(topics = "${test.topic}")
+    @KafkaListener(topics = "things_to_flink")
     public void receive(ConsumerRecord<?, ?> consumerRecord) {
         LOGGER.info("received payload='{}'", consumerRecord.toString());
         setPayload(consumerRecord.toString());
